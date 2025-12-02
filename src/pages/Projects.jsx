@@ -2,9 +2,17 @@ import { NavLink } from "react-router-dom";
 import useFetch from "../hooks/useFetch";
 
 export default function Projects() {
-  const { data: getProjects } = useFetch("/projects");
+  const { data: getProjects, loading, error } = useFetch("/projects");
   return (
     <div>
+      {loading && (
+        <div className="alert alert-info text-center py-3">Loading...</div>
+      )}
+      {error && (
+        <div className="alert alert-danger text-center py-3">
+          No projects data found
+        </div>
+      )}
       <div className="row g-4">
         {getProjects?.map((project) => (
           <div key={project._id} className="col-12 col-sm-6 col-md-4 col-lg-3">
