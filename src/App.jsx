@@ -10,6 +10,7 @@ import ProjectDetail from "./pages/ProjectDetail";
 import TaskDetail from "./pages/TaskDetail";
 import TeamDetail from "./pages/TeamDetail";
 import Reports from "./pages/Reports";
+import Settings from "./pages/Settings";
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
           <Route path="/home/teams" element={<Teams />} />
           <Route path="/home/teams/:teamId/members" element={<TeamDetail />} />
           <Route path="/home/reports" element={<Reports />} />
+          <Route path="/home/settings" element={<Settings />} />
         </Route>
       </Routes>
     </BrowserRouter>

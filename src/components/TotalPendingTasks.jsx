@@ -19,8 +19,7 @@ ChartJS.register(
   Title
 );
 
-export default function OwnerWisePendingTasks() {
-  const { data: tasks } = useFetch("/tasks");
+export default function OwnerWisePendingTasks({tasks}) {
 
   if (!tasks) return null;
 

@@ -22,7 +22,10 @@ export default function LeftSidebar() {
           aria-labelledby="sidebarMenuLabel"
         >
           <div className="offcanvas-header d-md-none">
-            <h5 className="offcanvas-title text-primary display-6 fw-semibold" id="sidebarMenuLabel">
+            <h5
+              className="offcanvas-title text-primary display-6 fw-semibold"
+              id="sidebarMenuLabel"
+            >
               Workasana
             </h5>
             <button
@@ -53,6 +56,11 @@ export default function LeftSidebar() {
               <li className="nav-item">
                 <NavLink className="nav-link" to="/home/reports">
                   Reports
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink className="nav-link" to="/home/settings">
+                  Settings
                 </NavLink>
               </li>
             </ul>
@@ -93,6 +101,11 @@ export default function LeftSidebar() {
               <li className="nav-item">
                 <NavLink className="nav-link" to="/home/reports">
                   Reports
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink className="nav-link" to="/home/settings">
+                  Settings
                 </NavLink>
               </li>
             </ul>

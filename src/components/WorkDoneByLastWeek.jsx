@@ -12,8 +12,7 @@ import useFetch from "../hooks/useFetch";
 
 ChartJS.register(CategoryScale, LinearScale, BarElement, Tooltip, Legend, Title);
 
-export default function WorkDoneByLastWeek() {
-  const { data: tasks } = useFetch("/tasks");
+export default function WorkDoneByLastWeek({tasks}) {
 
   if (!tasks) return null;
 

@@ -20,8 +20,7 @@ ChartJS.register(
   Title
 );
 
-export default function TotalTasksClosed({ ownerwise }) {
-  const { data: tasks } = useFetch("/tasks");
+export default function TotalTasksClosed({ ownerwise, tasks }) {
 
   if (!tasks) return null;
 
